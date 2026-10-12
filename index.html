@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Event Hub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="home">
+      <ul class="nav-links">
+        <li class="brand"><a href="#home">CAMPUS EVENT HUB</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#registration">Register</a></li>
+      </ul>
+    </nav>
+    <main>
+    <section class="container">
+      <h1>Welcome to the College Event Hub</h1>
+      <p>Discover and participate in exciting events happening on campus!</p>
+      <a href="#events" class="btn">Explore Events</a>
+    </section>
+    <section class="events-section" id="events">
+      <div class="section-label">
+        <span></span>
+        <p>FEATURED EVENTS</p>
+        <span></span>
+      </div>
+      <h2>Upcoming Campus Events</h2>
+      <p class="section-description">
+        Explore exciting opportunities, learn new skills, and be part of our
+        campus community.
+      </p>
+    </section>
+
+    <div class="event-container">
+      <div class="event-card">
+        <div class="event-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJAfmFosj9-_NWJrf0N5AsaJlTXwZi4EhN6I6MsCG8OIIhnoItl3srUdc&s=10"
+            alt="Web Development"
+          />
+          <span class="category technology">Technology</span>
+        </div>
+
+        <div class="event-content">
+          <h2>Web Development Workshop</h2>
+
+          <div class="event-info">
+            <span>📅 Oct 20, 2026</span>
+            <span>📍 Computer Lab</span>
+          </div>
+
+          <p>
+            Learn the basics of creating modern websites using HTML and CSS.
+            Perfect for beginners.
+          </p>
+
+          <div class="event-footer">
+            <span class="status open">● Registration Open</span>
+            <a href="#registration" class="event-btn blue"> Register Now &nbsp; → </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-image">
+          <img
+            src="https://img.magnific.com/free-photo/sports-tools_53876-138077.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Cricket"
+          />
+          <span class="category sports">Sports</span>
+        </div>
+
+        <div class="event-content">
+          <h2>Inter-College Cricket</h2>
+
+          <div class="event-info">
+            <span>📅 Oct 22, 2026</span>
+            <span>📍 College Ground</span>
+          </div>
+          <p>
+            Join fellow students for an exciting inter-college cricket tournament.
+            Show your talent and represent your department.
+          </p>
+
+          <div class="event-footer">
+            <span class="status open">● Registration Open</span>
+            <a href="#registration" class="event-btn green"> Register Now &nbsp; → </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqlPlLz3r8x8X4RECBzL2Kk_VS3Wa1fDBaUbKukVzFUAYLNvPAum1WfYU&s=10"
+            alt="Graphic Design"
+          />
+          <span class="category design">Design</span>
+        </div>
+
+        <div class="event-content">
+          <h2>Graphic Design Seminar</h2>
+
+          <div class="event-info">
+            <span>📅 Oct 25, 2026</span>
+            <span>📍 Seminar Hall</span>
+          </div>
+
+          <p>
+            Explore visual communication, design principles, and creative
+            techniques from industry experts.
+          </p>
+
+          <div class="event-footer">
+            <span class="status almost-full">● Almost Full</span>
+            <a href="#registration" class="event-btn purple"> View Details &nbsp; → </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-image">
+          <img
+            src="https://media.gettyimages.com/id/2084953046/photo/neural-network-nodes-deep-learning-artificial-intelligence-machine-learning-model.jpg?s=612x612&w=0&k=20&c=wuJff7Fb-RiwuhN-lXYiVgvZWjX8NZUhMzEBXg3S5XM="
+            alt="Coding Competition"
+          />
+          <span class="category technology">Technology</span>
+        </div>
+
+        <div class="event-content">
+          <h2>Coding Competition</h2>
+
+          <div class="event-info">
+            <span>📅 Oct 28, 2026</span>
+            <span>📍 Main Auditorium</span>
+          </div>
+
+          <p>
+            Test your programming and problem-solving skills. Compete, learn,
+            and win exciting prizes!
+          </p>
+
+          <div class="event-footer">
+            <span class="status coming-soon">● Coming Soon</span>
+            <a href="#registration" class="event-btn dark"> Learn More &nbsp; </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+<section class="registration" id="registration">
+    <h2>Event Registration Form</h2>
+    <p>Register now to participate in our event.</p>
+
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="student-id">Student ID</label>
+        <input type="text" id="student-id" name="student-id"
+               placeholder="Enter your student ID" required>
+
+        <label for="event">Select Event</label>
+        <select id="event" name="event" required>
+            <option value="">Choose an event</option>
+            <option value="web-design">Web Design</option>
+            <option value="coding">Coding Competition</option>
+            <option value="quiz">Quiz Competition</option>
+            <option value="sports">Sports Event</option>
+        </select>
+
+        <p>Participation Type</p>
+
+        <label class="option">
+            <input type="radio" name="participation"
+                   value="individual" required>
+            Individual
+        </label>
+
+        <label class="option">
+            <input type="radio" name="participation"
+                   value="team">
+            Team
+        </label>
+
+        <label class="agreement">
+            <input type="checkbox" name="agreement" required>
+            I agree to the event rules and regulations.
+        </label>
+
+        <button type="submit">Register Now</button>
+    </form>
+</section>
+<section class="about" id="about">
+    <h2>About Our Website</h2>
+    <p>
+        Our website helps students register for educational events,
+        coding competitions, quizzes, and sports activities.
+        Our goal is to make event registration simple and easy
+        for every student.
+    </p>
+</section>
+    </main>
+
+<footer class="footer" id="contact">
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h3>About Our Website</h3>
+            <p>
+                Campus Event Hub helps students discover and register for
+                educational, technology, design, and sports events.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#registration">Register</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email:
+                <a href="mailto:events@example.com">
+                    events@example.com
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2026 Student Events. All rights reserved.</p>
+    </div>
+</footer>
+
+  </body>
+</html>
